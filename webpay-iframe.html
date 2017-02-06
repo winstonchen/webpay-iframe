@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Iframe example</title>
-<link rel="stylesheet" href="src/css/styles.css">
 <script src="https://maheshkk.github.io/samsung-shop/src/js/webpay.js"></script>
 <style>
     .button{
@@ -30,7 +29,6 @@
 <script>
     (function(){
       var button = document.getElementById('button').addEventListener('click', donate);
-      
       function donate(){
         var price = '$50.00';
         var item = [{
@@ -40,7 +38,6 @@
         var webpayment = new webpay();
             webpayment.setup(item,price);
       }
-      
     })();
 </script>
 </html>
